@@ -1,0 +1,352 @@
+  header, .afterheader{
+    background-color: rgb(78, 172, 221);
+  }
+  ul {
+    list-style-type: none;
+  }
+  button{
+    color: white;
+    font-size: 90%;
+    cursor: pointer;
+    background-color: rgb(66, 153, 213);
+    padding: 15px 20px;
+    border: 0px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    border-radius: 5%;
+    }
+    button:hover {
+    background-color: rgb(84, 84, 84);
+    font-weight: bold;
+    }
+    button:active {
+    background-color: rgb(243, 120, 122);
+    color: white;
+    border: 0px;
+    }
+
+  .afterheader {
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+      min-height: 420px;
+      margin-bottom: -20px;
+      }
+    button.download{
+      margin-bottom: 25px;
+      margin-top: 15px;
+      }
+
+    h1, h2{
+      font-family: Lobster;
+      }
+    p{
+      font-family: Open Sans;
+      font-weight: 400;
+      }
+  .section1{
+      text-align: center;
+      background-color: rgb(235, 235, 235);
+      min-height: 380px;
+      margin-bottom: -20px;
+      padding-left: 10px;
+      }
+    h2{
+      padding-top: 30px;
+      padding-bottom: 10px;
+      }
+    blockquote {
+      font-style: italic;
+      font-family: Open Sans;
+      font-weight: 300;
+    }
+    button.hello{
+      margin-top: 7px;
+      }
+
+  .section2{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    min-height: 320px;
+    }
+    button.view{
+    margin-top: 25px;
+    }
+
+  .section3{
+    background-color: rgb(15, 173, 140);
+    text-align: center;
+    min-height: 200px;
+    color: white;
+    }
+    button.beer{
+      margin-top: 15px;
+      font-style: italic;
+    }
+
+  footer{
+      background-color: rgb(244, 244, 244);
+      min-height: 400px;
+    }
+    .foot{
+      padding-top: 100px;
+      text-align: center;
+    }
+
+    span{
+    padding: 15px 15px;
+    margin: 10px;
+    font-size: 150%;
+    background-color: #888888;
+    border-radius: 50%;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    }
+    span a:hover {
+      color: black;
+      box-shadow: 5px 5px 55px 15px #888888;
+    }
+    span a{
+      display: inline-block;
+      color: white;
+    }
+    .fa-facebook{padding-left: 5px; padding-right: 5px;}
+    .fa-instagram{padding-left: 2px; padding-right: 2px;}
+    .news{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    color: rgb(84, 84, 84);
+    font-style: italic;
+    font-weight: bold;
+    }
+    input{
+      border: 0px;
+      border-radius: 8px 0px 0px 8px;
+      padding: 14px 0px 14px 12px;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+    }
+    input:hover {
+      box-shadow: 4px 1px 60px 1px #888888;
+    }
+    input:focus {outline: 0;}
+    button:focus{outline: 0;}
+
+    ::-webkit-input-placeholder,
+    -moz-placeholder,
+    -moz-placeholder,
+    -ms-input-placeholder {
+      color: rgb(84, 84, 84);
+      font-style: italic;
+      }
+    button.mail{
+      background-color: white;
+      color: rgb(66, 153, 213);
+      border-radius: 0px 8px 8px 0px;
+      border: 0px;
+    }
+
+@media screen and (max-width: 1024px) {
+  nav{
+    overflow: hidden;
+  }
+  p{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+  }
+  .logo{
+    float: left;
+  }
+  .izbornik{
+    float: right;
+    background: white;
+    color: rgb(78, 172, 221);
+    min-width: 100px;
+    min-height: 100px;
+    position: relative;
+  }
+  .fa-navicon{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    float: right;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .fa-navicon.active:before{
+    content: "\f00d";
+  }
+  ul{
+    -webkit-padding-start: 0px;
+  }
+  .ismobile{
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, height 0.5s, opacity 0.5s linear;}
+  .ismobile.expanded{
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    }
+
+  li a{
+    font-family: Lobster;
+    display: inline-block;
+    color: rgb(78, 172, 221);
+    border-bottom: 1px solid rgb(78, 172, 221);
+    background-color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    .ipad{display: none;}
+    .devices{display: none;}
+    .section1{min-height: 400px;}
+    .iphone{
+      position: absolute;
+      bottom: -280px;
+      left: 28%;
+      }
+}
+
+@media screen and (min-width: 1024px) {
+  .fa-navicon{display: none;}
+  nav{
+    float: right;
+  }
+  .des:after{
+    content: "";
+    display: table;
+    clear: both;
+    }
+  ul{
+    float: right;
+    padding-top: 5%;
+    }
+  .logo{
+      float: left;
+      }
+  li{
+    display: inline;
+    }
+  li a{
+    font-family: Lobster;
+    color: white;
+    text-align: left;
+    padding: 10px 10px;
+    text-decoration: none;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+  li a:hover {
+    color: black;
+    }
+  h1{font-size: 3em;}
+  h2{font-size: 2em;}
+  p{font-size: 140%;}
+  header{
+    padding-left: 12%;
+    padding-right: 12%;
+    }
+  .afterheader {
+    color: white;
+    padding-right: 12%;
+    text-align: right;
+    margin-bottom: -30px;
+    }
+  .afterheader p{
+    justify-content: flex-end;
+    }
+    .iphone{
+      position: absolute;
+      bottom: -210px;
+      left: 22%;
+      }
+  button.download{
+    margin-top: 35px;}
+
+.section1{
+    text-align: left;
+    min-height: 600px;
+    padding-left: 12%;
+    overflow: hidden;
+    position: relative;
+    }
+  .section1 p{
+    font-size: 120%; }
+  .drugi{
+    max-width: 700px;
+    }
+  h2{
+    padding-top: 70px;
+    }
+  .ipad{
+    position: absolute;
+    bottom: -100px;
+    right: -80px;
+    }
+  blockquote {
+    position: relative;
+    margin: 0;
+    padding-left: 25px;
+    }
+  blockquote:after{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 7px;
+    content: "";
+    display: block;
+    top: 0;
+    background-color: rgb(66, 153, 213);
+    }
+
+  .section2{
+    text-align: left;
+    min-height: 600px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: -30px;
+    }
+    .section2 p{
+    font-size: 120%;
+    padding-top: 10px;
+    padding-bottom: 10px;}
+  .devices{
+    position: absolute;
+    bottom: -14%;
+    left: 0px;
+    }
+  .treci{
+    position: absolute;
+    left: 60%;
+    }
+  .section3{min-height: 300px;}
+
+  .cetvrti{
+    padding-top: 8%;
+    max-width: 600px;
+    margin: auto;
+    }
+  .news{
+    padding-top: 8px;
+    padding-bottom: 0px;
+    font-size: 110%;
+    width: 50%;
+    float: left;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    }
+  .forma{
+    float: right;
+    width: 50%;
+    }
+}
